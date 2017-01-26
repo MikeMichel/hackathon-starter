@@ -4,3 +4,7 @@
   image_tag: "{{ .CommitID }}"
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted
+
+- service: deploy via curl
+  encrypted_env_file: sloppytoken.env.encrypted
+  command: curl -vvv -H "Content-Type: application/json" -H "Authorization: Bearer $SLOPPYIO_TOKEN" -X PATCH -d '{"image": "'{{ .CommitID }}':'{{ .CommitID }}'"}'  https://api.sloppy.io/v1/apps/hackathon/services/frontend/apps/node
