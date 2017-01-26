@@ -1,0 +1,4 @@
+app:
+  build:
+    image: mikemichel/hackathon-starter:codeship
+    dockerfile_path: Dockerfile
