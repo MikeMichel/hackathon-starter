@@ -5,6 +5,8 @@
 set -e
 
 SLOPPY_APITOKEN=${SLOPPY_APITOKEN}
+echo "test"
+set
 echo $SLOPPY_APITOKEN
 
 
