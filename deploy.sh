@@ -5,6 +5,8 @@
 set -e
 
 SLOPPY_APITOKEN=${SLOPPY_APITOKEN}
+echo $SLOPPY_APITOKEN
+
 
 curl -L https://files.sloppy.io/sloppy-`uname -s`-`uname -m` > /usr/local/bin/sloppy
 chmod +x /usr/local/bin/sloppy
