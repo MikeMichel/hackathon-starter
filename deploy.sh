@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 set -e
 
 SLOPPY_APITOKEN=${SLOPPY_APITOKEN}
